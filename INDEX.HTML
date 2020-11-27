@@ -1,0 +1,101 @@
+<html>
+<body>
+<head>
+<center>
+    <title>
+        My Family 
+    </title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="icons8-laptop-coding-64.png" />
+    <meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="IMG_2332.JPG"
+        charset="UTF-8"></script>
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://gc.kis.v2.scr.kaspersky-labs.com" />
+</head>
+
+<body>
+
+
+    <p id="head">MY FAMILY BOOK</p>
+    <img id="img" style="height: 400px;"
+        src="">
+    <h4 id="Name">Family Book</h4>
+    <button onclick="Next()" id="next">Next</button>
+
+
+</body>
+<style>
+    #next {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+    }
+
+
+    #name {
+        font-size: 30px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+    #head {
+        font-size: 60px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+    body {
+        text-align: center;
+    }
+</style>
+
+
+<script>
+    var Name = [
+        "Bhim Singh Chauhan",
+        "Amrit",
+        "Surya Prathap Singh Chauhan",
+
+
+    ];
+
+
+    var Images = [
+        "father.jpg.JPG",
+        "mother.jpg.JPG",
+        "BROTHER.jpg.JPG",
+
+    ];
+
+
+    var i = 0;
+    function Next() {
+        document.getElementById("Name").innerHTML = Name[i];
+        document.getElementById("img").src = Images[i];
+        i++;
+        if (i == 3) {
+            i = 0;
+            document.getElementById("Name").innerHTML = "Bhim Singh Chauhan";
+            document.getElementById("img").src = "father.jpg.JPG"
+            "mother.jpg.JPG" "BROTHER.jpg.JPG";
+        }
+    }
+</script>
+
+</body>
+
+</center>
+</html>
